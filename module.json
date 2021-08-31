@@ -1,6 +1,6 @@
 {
-  "name": "name",
-  "title": "title",
+  "name": "go-to-player",
+  "title": "Go To Player",
   "description": "desc",
   "version": "0.1",
   "author": "theripper93",
@@ -19,8 +19,6 @@
       }
   ],
   "scripts": [
-      "./scripts/main.js",
-      "./scripts/config.js",
       "./scripts/module.js"
   ],
   "styles": [

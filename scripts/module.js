@@ -6,7 +6,7 @@ Hooks.once("ready", () => {
       const sceneId = game.users.get(userId).viewedScene;
       const actorId = game.users.get(userId).character?.id;
       const $li = $(
-        `<li class="context-item"><i class="fas fa-street-view"></i>Go To Player</li>`
+        `<li class="context-item"><i class="fas fa-street-view"></i>${game.i18n.localize("gotoplayer.gotoplayer")}</li>`
       );
       $li.on("click", function () {
         if (sceneId) {

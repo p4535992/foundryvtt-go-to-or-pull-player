@@ -1,0 +1,36 @@
+Hooks.on('renderPlayerList', (playerList, [html]) => {
+    console.log("---------- Player List Rendered ----------")
+
+    // Insert a button at the end of the header
+    const newBtn = document.createElement('button');
+
+    newBtn.className = 'test-icon-button';
+    newBtn.title = 'Test Title';
+
+    const btnIcon = document.createElement('i');
+    btnIcon.className = 'fas fa-check';
+    if (game.settings.get('testModule', 'state')) {
+        btnIcon.className = 'fas fa-times';
+    }
+    newBtn.appendChild(btnIcon);
+
+    newBtn.addEventListener("click", event => {
+        
+        let prevSetting = game.settings.get('testModule', 'state');
+        game.settings.set('testModule', 'state', !prevSetting);
+
+        if (prevSetting) {
+
+            // Do Things
+
+        }
+        else {
+
+            // Do Things
+
+        }
+
+    });
+
+    if (game.user.isGM) html.prepend(newBtn);
+});

@@ -69,6 +69,7 @@ Any issues, bugs, or feature requests are always welcome to be reported directly
 
 - [Go To Player](https://github.com/theripper93/go-to-player) with [MIT](https://github.com/theripper93/go-to-player/blob/master/LICENSE.md)
 - [Pull players to scene](https://github.com/Mr-Byte/pull-players-to-scene) with [MIT](https://github.com/Mr-Byte/pull-players-to-scene/blob/main/LICENSE)
+- [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player) with [???](https://github.com/skepickle/foundryvtt-gaming-table-player)
 
 This package is under an [MIT license](LICENSE) and the [Foundry Virtual Tabletop Limited License Agreement for module development](https://foundryvtt.com/article/license/).
 
@@ -82,3 +83,4 @@ Thanks to anyone who helps me with this code! I appreciate the user community's 
 
 - Ty to [theripper93](https://github.com/theripper93) for the module [Go To Player](https://github.com/theripper93/go-to-player)
 - Ty to [Mr-Byte](https://github.com/Mr-Byte) for the module [Pull players to scene](https://github.com/Mr-Byte/pull-players-to-scene)
+- Ty to [skepickle](https://github.com/skepickle) for the module [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)

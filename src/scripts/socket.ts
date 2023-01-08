@@ -1,7 +1,7 @@
 import CONSTANTS from "./constants";
 import API from "./api";
 import { debug } from "./lib/lib";
-import { setSocket } from "src/main";
+import { setSocket } from "../main";
 
 export let goToOrPullPlayerSocket;
 

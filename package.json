@@ -2,7 +2,7 @@
 	"name": "go-to-or-pull-player",
 	"title": "Go to or pull player",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.2",
   "main": "final-blow.js",
   "scripts": {
     "publish": "gulp publish --update",

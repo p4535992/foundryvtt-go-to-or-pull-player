@@ -1,8 +1,8 @@
-import { setApi } from "src/main";
 import CONSTANTS from "./constants";
 import API from "./api";
 import { getContextOption } from "./pull-to-scene";
 import { registerSocket } from "./socket";
+import { setApi } from "../main";
 
 export const initHooks = () => {
 	// warn("Init Hooks processing");
@@ -13,7 +13,6 @@ export const initHooks = () => {
 
 export const setupHooks = () => {
 	// warn("Setup Hooks processing");
-	//@ts-ignore
 	setApi(API);
 };
 

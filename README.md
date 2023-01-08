@@ -16,7 +16,12 @@
 
 ### If you want to buy me a coffee [![alt-text](https://img.shields.io/badge/-Patreon-%23ff424d?style=for-the-badge)](https://www.patreon.com/p4535992)
 
-A simple module for help gm to understnad where the payers are os should be pulled. 
+A simple module for help gm to understand where the players are or should be pulled. 
+
+The module originated as a combination of two abandoned modules [Go To Player](https://github.com/theripper93/go-to-player) and [Pull players to scene](https://github.com/Mr-Byte/pull-players-to-scene)
+, which given the similarity of functions made sense to put them in the same module.
+
+Below are the features provided by this module:
 
 - Feature: To get the GM to a specific player (go to it's viewed scene and pan the camera to their token)
 - Feature: Make pulling multiple players to a scene easier.

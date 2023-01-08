@@ -4,15 +4,15 @@
 	"description": "",
 	"version": "0.0.1",
 	"authors": [
-        {
-            "name": "theripper93",
-            "email": "tsplab@gmail.com",
-            "url": "https://www.patreon.com/theripper93"
-        },
-        {
-            "name": "Mr-Byte",
-            "github": "Mr-Byte"
-        },
+		{
+			"name": "theripper93",
+			"email": "tsplab@gmail.com",
+			"url": "https://www.patreon.com/theripper93"
+		},
+		{
+			"name": "Mr-Byte",
+			"github": "Mr-Byte"
+		},
 		{
 			"name": "p4535992",
 			"url": "https://github.com/p4535992",
@@ -80,7 +80,27 @@
 	"allowBugReporter": true,
 	"relationships": {
 		"systems": [],
-		"requires": [],
-		"conflicts": []
+		"requires": [
+			{
+				"id": "socketlib",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/develop/module.json",
+				"compatibility": {}
+			}
+		],
+		"conflicts": [
+			{
+				"id": "go-to-player",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/theripper93/go-to-player/master/module.json",
+				"reason": "Redundancy of feature please uninstall the module 'Go To Player'"
+			},
+			{
+				"id": "pull-players-to-scene",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/Mr-Byte/pull-players-to-scene/main/module.json",
+				"reason": "Redundancy of feature please uninstall the module 'Pull Players to Scene'"
+			}
+		]
 	}
 }

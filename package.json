@@ -1,8 +1,8 @@
 {
-  "name": "final-blow",
-  "title": "Final Blow",
-  "description": "",
-  "version": "1.0.12",
+	"name": "go-to-or-pull-player",
+	"title": "Go to or pull player",
+	"description": "",
+	"version": "0.0.1",
   "main": "final-blow.js",
   "scripts": {
     "publish": "gulp publish --update",

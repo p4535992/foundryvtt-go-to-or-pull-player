@@ -1,37 +1,86 @@
 {
-  "name": "go-to-or-pull-player",
-  "title": "Go To Player",
-  "description": "desc",
-  "version": "0.1",
-  "author": "theripper93",
-  "authors": [
-      {
-          "name": "theripper93",
-          "email": "tsplab@gmail.com",
-          "url": "https://www.patreon.com/theripper93"
-      }
-  ],
-  "languages": [
-      {
-          "lang": "en",
-          "name": "English",
-          "path": "languages/en.json"
-      }
-  ],
-  "scripts": [
-      "./scripts/module.js"
-  ],
-  "styles": [
-      "./styles/module.css"
-  ],
-  "packs": [
-  ],
-  "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "0.8.9",
-  "url": "https://github.com/theripper93/go-to-player",
-  "manifest": "https://github.com/theripper93/go-to-player/releases/latest/download/module.json",
-  "download": "https://github.com/theripper93/go-to-player/releases/latest/download/module.zip",
-  "socket":false,
-  "dependencies": [
-  ]
+	"id": "go-to-or-pull-player",
+	"title": "Go to or pull player",
+	"description": "",
+	"version": "0.0.1",
+	"authors": [
+        {
+            "name": "theripper93",
+            "email": "tsplab@gmail.com",
+            "url": "https://www.patreon.com/theripper93"
+        },
+        {
+            "name": "Mr-Byte",
+            "github": "Mr-Byte"
+        },
+		{
+			"name": "p4535992",
+			"url": "https://github.com/p4535992",
+			"discord": "",
+			"twitter": "",
+			"patreon": "",
+			"github": "p4535992",
+			"ko-fi": "",
+			"reddit": "",
+			"email": ""
+		}
+	],
+	"type": "module",
+	"socket": true,
+	"includes": [
+		"./assets/**",
+		"./lang/**",
+		"./languages/**",
+		"./scripts/**",
+		"./styles/**",
+		"./templates/**",
+		"./module.json",
+		"./README.md",
+		"./icons/**",
+		"./packs/**"
+	],
+	"media": [
+		{
+			"type": "icon",
+			"location": ""
+		},
+		{
+			"type": "cover",
+			"location": ""
+		},
+		{
+			"type": "screenshot",
+			"location": ""
+		}
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	],
+	"packs": [],
+	"systems": [],
+	"scripts": [],
+	"esmodules": ["main.js"],
+	"styles": ["styles/go-to-or-pull-player.css"],
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 10
+	},
+	"manifestPlusVersion": "1.2.1",
+	"url": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player",
+	"manifest": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/latest/download/module.json",
+	"download": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/latest/download/module.zip",
+	"readme": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/v0.0.1/README.md",
+	"changelog": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/v0.0.1/CHANGELOG.md",
+	"bugs": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/issues",
+	"allowBugReporter": true,
+	"relationships": {
+		"systems": [],
+		"requires": [],
+		"conflicts": []
+	}
 }

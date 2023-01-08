@@ -50,10 +50,10 @@ Hooks.once("ready", async () => {
 	//   if (game.modules.get('lib-wrapper')) word = 'activate';
 	//   throw error(`Requires the 'libWrapper' module. Please ${word} it.`);
 	// }
-	if (!game.modules.get('socketLib')?.active && game.user?.isGM) {
-	  let word = 'install and activate';
-	  if (game.modules.get('socketLib')) word = 'activate';
-	  throw error(`Requires the 'socketLib' module. Please ${word} it.`);
+	if (!game.modules.get("socketLib")?.active && game.user?.isGM) {
+		let word = "install and activate";
+		if (game.modules.get("socketLib")) word = "activate";
+		throw error(`Requires the 'socketLib' module. Please ${word} it.`);
 	}
 	readyHooks();
 });

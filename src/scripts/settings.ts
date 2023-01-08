@@ -28,9 +28,8 @@ class ResetSettingsDialog extends FormApplication<FormApplicationOptions, object
 					icon: '<i class="fas fa-check"></i>',
 					label: game.i18n.localize(`${CONSTANTS.MODULE_NAME}.dialogs.resetsettings.confirm`),
 					callback: async () => {
-						for (let setting of game.settings.storage
-							.get("world")
-							.filter((setting) => setting.key.startsWith(`${CONSTANTS.MODULE_NAME}.`))) {
+						const worldSettings = game.settings.storage?.get("world")?.filter((setting) => setting.key.startsWith(`${CONSTANTS.MODULE_NAME}.`));
+						for (let setting of worldSettings) {
 							console.log(`Reset setting '${setting.key}'`);
 							await setting.delete();
 						}

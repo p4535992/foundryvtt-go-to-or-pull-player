@@ -2,6 +2,7 @@ import { setApi } from "src/main";
 import CONSTANTS from "./constants";
 import API from "./api";
 import { getContextOption } from "./pull-to-scene";
+import { registerSocket } from "./socket";
 
 export const initHooks = () => {
 	// warn("Init Hooks processing");
@@ -25,12 +26,12 @@ export const readyHooks = async () => {
 		contextOptions.push(<any>getContextOption("documentId"));
 	});
 
-	if (!game.user.isGM) {
+	if (game.user?.isGM) {
 		$(document).on("mouseup", ".player.flexrow", function (event) {
 			if (event.which == 3) {
 				const userId = event.currentTarget.dataset.userId;
-				const sceneId = game.users.get(userId).viewedScene;
-				const actorId = game.users.get(userId).character?.id;
+				const sceneId = game.users?.get(userId)?.viewedScene;
+				const actorId = game.users?.get(userId)?.character?.id;
 				const $li = $(
 					`<li class="context-item"><i class="fas fa-street-view"></i>${game.i18n.localize(
 						`${CONSTANTS.MODULE_NAME}.label.gotoplayer`
@@ -38,16 +39,16 @@ export const readyHooks = async () => {
 				);
 				$li.on("click", function () {
 					if (sceneId) {
-						if (sceneId != canvas.scene.id) {
-							game.scenes.get(sceneId).view();
+						if (sceneId != canvas.scene?.id) {
+							game.scenes?.get(sceneId)?.view();
 							Hooks.once("canvasReady", () => {
-								const token = canvas.tokens.placeables.find((t) => t.actor?.id === actorId);
+								const token = canvas.tokens?.placeables.find((t) => t.actor?.id === actorId);
 								if (token) {
 									canvas.animatePan({ x: token.center.x, y: token.center.y, scale: 1 });
 								}
 							});
 						} else {
-							const token = canvas.tokens.placeables.find((t) => t.actor?.id === actorId);
+							const token = canvas.tokens?.placeables.find((t) => t.actor?.id === actorId);
 							if (token) {
 								canvas.animatePan({ x: token.center.x, y: token.center.y, scale: 1 });
 							}
@@ -60,4 +61,4 @@ export const readyHooks = async () => {
 			}
 		});
 	}
-});
+};

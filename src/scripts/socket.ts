@@ -1,20 +1,20 @@
 import CONSTANTS from "./constants";
 import API from "./api";
 import { debug } from "./lib/lib";
-import { setSocket } from "../final-blow";
+import { setSocket } from "src/main";
 
-export let finalBlowSocket;
+export let goToOrPullPlayerSocket;
 
 export function registerSocket() {
-	debug("Registered finalBlowSocket");
-	if (finalBlowSocket) {
-		return finalBlowSocket;
+	debug("Registered goToOrPullPlayerSocket");
+	if (goToOrPullPlayerSocket) {
+		return goToOrPullPlayerSocket;
 	}
 	//@ts-ignore
-	finalBlowSocket = socketlib.registerModule(CONSTANTS.MODULE_NAME);
+	goToOrPullPlayerSocket = socketlib.registerModule(CONSTANTS.MODULE_NAME);
 
-	finalBlowSocket.register("renderDialogMMMForFinalBlow", (...args) => API.renderDialogMMMForFinalBlowArr(...args));
+	goToOrPullPlayerSocket.register("pullPlayerToScene", (...args) => API.pullPlayerToSceneArr(...args));
 
-	setSocket(finalBlowSocket);
-	return finalBlowSocket;
+	setSocket(goToOrPullPlayerSocket);
+	return goToOrPullPlayerSocket;
 }

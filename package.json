@@ -2,7 +2,7 @@
 	"name": "go-to-or-pull-player",
 	"title": "Go to or pull player",
 	"description": "",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "module.js",
 	"license": "SEE LICENSE IN LICENSE",
 	"private": true,

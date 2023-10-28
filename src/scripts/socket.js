@@ -11,7 +11,7 @@ export function registerSocket() {
     return goToOrPullPlayerSocket;
   }
   //@ts-ignore
-  goToOrPullPlayerSocket = socketlib.registerModule(CONSTANTS.MODULE_NAME);
+  goToOrPullPlayerSocket = socketlib.registerModule(CONSTANTS.MODULE_ID);
 
   goToOrPullPlayerSocket.register("pullPlayerToScene", (...args) => API.pullPlayerToSceneArr(...args));
 

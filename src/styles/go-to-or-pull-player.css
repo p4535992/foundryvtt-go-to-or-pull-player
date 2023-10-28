@@ -16,6 +16,8 @@
   font-weight: normal;
   text-shadow: 1px 1px 3px #000;
   color: #f0f0ee;
+  padding: 5px 10px;
+  border: none;
 }
 
 .go-to-or-pull-player-player {

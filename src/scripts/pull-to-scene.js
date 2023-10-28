@@ -21,9 +21,9 @@ export class PullToSceneApplication extends Application {
 
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      id: `${CONSTANTS.MODULE_NAME}`,
-      title: game.i18n.localize(`${CONSTANTS.MODULE_NAME}.pull-players-title`),
-      template: `modules/${CONSTANTS.MODULE_NAME}/templates/pull-to-scene.html`,
+      id: `${CONSTANTS.MODULE_ID}`,
+      title: game.i18n.localize(`${CONSTANTS.MODULE_ID}.pull-players-title`),
+      template: `modules/${CONSTANTS.MODULE_ID}/templates/pull-to-scene.html`,
       width: 300,
       popOut: true,
       classes: ["dialog"],
@@ -67,15 +67,3 @@ export class PullToSceneApplication extends Application {
     });
   }
 }
-
-export const getContextOption = (idField) => {
-  return {
-    name: `${CONSTANTS.MODULE_NAME}.context-menu`,
-    icon: '<i class="fas fa-directions"></i>',
-    condition: (_) => game.user?.isGM,
-    callback: (item) => {
-      const scene = game.scenes?.get(item.data(idField));
-      PullToSceneApplication.show(game.users, scene);
-    },
-  };
-};

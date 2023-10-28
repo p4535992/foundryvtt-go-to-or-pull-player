@@ -1,3 +1,4 @@
+import API from "./api";
 import CONSTANTS from "./constants";
 import { PullToSceneApplication } from "./pull-to-scene";
 
@@ -22,24 +23,19 @@ export class GoToOrPullHelpers {
       //condition: (_) => game.user?.isGM,
       callback: (item) => {
         const userId = item.data("userId");
-        const sceneId = game.users?.get(userId)?.viewedScene;
-        const actorId = game.users?.get(userId)?.character?.id;
-        if (sceneId) {
-          if (sceneId != canvas.scene?.id) {
-            game.scenes?.get(sceneId)?.view();
-            Hooks.once("canvasReady", () => {
-              const token = canvas.tokens?.placeables.find((t) => t.actor?.id === actorId);
-              if (token) {
-                canvas.animatePan({ x: token.center.x, y: token.center.y, scale: 1 });
-              }
-            });
-          } else {
-            const token = canvas.tokens?.placeables.find((t) => t.actor?.id === actorId);
-            if (token) {
-              canvas.animatePan({ x: token.center.x, y: token.center.y, scale: 1 });
-            }
-          }
-        }
+        API.goToPlayer(userId);
+      },
+    };
+  };
+
+  static getContextOptionWhereIsMyToken = (idField) => {
+    return {
+      name: `${CONSTANTS.MODULE_ID}.label.whereismytoken`,
+      icon: '<i class="fas fa-search-location"></i>',
+      //condition: (_) => game.user?.isGM,
+      callback: (item) => {
+        const userId = item.data("userId");
+        API.whereIsMyToken();
       },
     };
   };

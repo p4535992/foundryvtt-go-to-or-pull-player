@@ -28,5 +28,6 @@ export const readyHooks = async () => {
 
   Hooks.on("getUserContextOptions", (html, contextOptions) => {
     contextOptions.push(GoToOrPullHelpers.getContextOptionGoToPlayer("documentId"));
+    contextOptions.push(GoToOrPullHelpers.getContextOptionWhereIsMyToken("documentId"));
   });
 };

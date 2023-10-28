@@ -3,5 +3,6 @@
   "go-to-or-pull-player.context-menu": "Pull Players to Scene",
   "go-to-or-pull-player.pull-players-title": "Pull Players to Scene",
   "go-to-or-pull-player.players": "Players",
-  "go-to-or-pull-player.button": "Pull Selected Players"
+  "go-to-or-pull-player.button": "Pull Selected Players",
+  "go-to-or-pull-player.label.whereismytoken": "Where is my token ?"
 }

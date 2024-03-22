@@ -1,3 +1,8 @@
+### 0.1.2
+
+- Rmeove old authros from the author tags
+- Update some configuration
+
 ### 0.1.1
 
 - Full rewrite

@@ -2,16 +2,8 @@
   "id": "go-to-or-pull-player",
   "title": "Go to or pull player",
   "description": "",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
-    {
-      "name": "theripper93",
-      "url": "https://www.patreon.com/theripper93"
-    },
-    {
-      "name": "Mr-Byte",
-      "github": "Mr-Byte"
-    },
     {
       "name": "p4535992",
       "url": "https://github.com/p4535992",
@@ -71,8 +63,8 @@
   },
   "manifestPlusVersion": "1.2.1",
   "url": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player",
-  "manifest": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.1/module.json",
-  "download": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.1/module.zip",
+  "manifest": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.2/module.json",
+  "download": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.2/module.zip",
   "readme": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/master/README.md",
   "changelog": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/master/CHANGELOG.md",
   "bugs": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/issues",

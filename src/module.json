@@ -1,97 +1,95 @@
 {
-  "id": "go-to-or-pull-player",
-  "title": "Go to or pull player",
-  "description": "",
-  "version": "0.1.2",
-  "authors": [
-    {
-      "name": "p4535992",
-      "url": "https://github.com/p4535992",
-      "discord": "",
-      "twitter": "",
-      "patreon": "",
-      "github": "p4535992",
-      "ko-fi": "",
-      "reddit": "",
-      "email": ""
-    }
-  ],
-  "type": "module",
-  "socket": true,
-  "includes": [
-    "./assets/**",
-    "./lang/**",
-    "./languages/**",
-    "./scripts/**",
-    "./styles/**",
-    "./templates/**",
-    "./module.json",
-    "./README.md",
-    "./icons/**",
-    "./packs/**"
-  ],
-  "media": [
-    {
-      "type": "icon",
-      "location": ""
-    },
-    {
-      "type": "cover",
-      "location": ""
-    },
-    {
-      "type": "screenshot",
-      "location": ""
-    }
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
-  "packs": [],
-  "systems": [],
-  "scripts": [],
-  "esmodules": ["module.js"],
-  "styles": ["styles/go-to-or-pull-player.css"],
-  "compatibility": {
-    "minimum": 11,
-    "verified": 11,
-    "maximum": 11
-  },
-  "manifestPlusVersion": "1.2.1",
-  "url": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player",
-  "manifest": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.2/module.json",
-  "download": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.2/module.zip",
-  "readme": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/master/README.md",
-  "changelog": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/master/CHANGELOG.md",
-  "bugs": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/issues",
-  "allowBugReporter": true,
-  "relationships": {
-    "systems": [],
-    "requires": [
-      {
-        "id": "socketlib",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/develop/module.json",
-        "compatibility": {}
-      }
+    "id": "go-to-or-pull-player",
+    "title": "Go to or pull player",
+    "description": "",
+    "version": "0.1.3",
+    "authors": [
+        {
+            "name": "p4535992",
+            "url": "https://github.com/p4535992",
+            "discord": "",
+            "twitter": "",
+            "patreon": "",
+            "github": "p4535992",
+            "ko-fi": "",
+            "reddit": "",
+            "email": ""
+        }
     ],
-    "conflicts": [
-      {
-        "id": "go-to-player",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/theripper93/go-to-player/master/module.json",
-        "reason": "Redundancy of feature please uninstall the module 'Go To Player'"
-      },
-      {
-        "id": "pull-players-to-scene",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/Mr-Byte/pull-players-to-scene/main/module.json",
-        "reason": "Redundancy of feature please uninstall the module 'Pull Players to Scene'"
-      }
-    ]
-  }
+    "type": "module",
+    "socket": true,
+    "includes": [
+        "./assets/**",
+        "./lang/**",
+        "./languages/**",
+        "./scripts/**",
+        "./styles/**",
+        "./templates/**",
+        "./module.json",
+        "./README.md",
+        "./icons/**",
+        "./packs/**"
+    ],
+    "media": [
+        {
+            "type": "icon",
+            "location": ""
+        },
+        {
+            "type": "cover",
+            "location": ""
+        },
+        {
+            "type": "screenshot",
+            "location": ""
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        }
+    ],
+    "packs": [],
+    "systems": [],
+    "scripts": [],
+    "esmodules": ["module.js"],
+    "styles": ["styles/go-to-or-pull-player.css"],
+    "compatibility": {
+        "minimum": 11,
+        "verified": 11,
+        "maximum": 12
+    },
+    "url": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player",
+    "manifest": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.3/module.json",
+    "download": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/releases/download/0.1.3/module.zip",
+    "readme": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/master/README.md",
+    "changelog": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/blob/master/CHANGELOG.md",
+    "bugs": "https://github.com/p4535992/foundryvtt-go-to-or-pull-player/issues",
+    "relationships": {
+        "systems": [],
+        "requires": [
+            {
+                "id": "socketlib",
+                "type": "module",
+                "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/develop/module.json",
+                "compatibility": {}
+            }
+        ],
+        "conflicts": [
+            {
+                "id": "go-to-player",
+                "type": "module",
+                "manifest": "https://raw.githubusercontent.com/theripper93/go-to-player/master/module.json",
+                "reason": "Redundancy of feature please uninstall the module 'Go To Player'"
+            },
+            {
+                "id": "pull-players-to-scene",
+                "type": "module",
+                "manifest": "https://raw.githubusercontent.com/Mr-Byte/pull-players-to-scene/main/module.json",
+                "reason": "Redundancy of feature please uninstall the module 'Pull Players to Scene'"
+            }
+        ]
+    }
 }

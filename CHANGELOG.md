@@ -1,3 +1,7 @@
+### 0.1.3
+
+- Update manifest for v12
+
 ### 0.1.2
 
 - Rmeove old authros from the author tags
